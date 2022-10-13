@@ -512,6 +512,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+    color: var(--secondory-font-color);
 }
 
 .gallery-project-text {
