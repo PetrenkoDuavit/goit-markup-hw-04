@@ -93,9 +93,9 @@ button {
   margin-left: auto;
 }
 
-.contacts-item-link {
-  padding: 32px 0;
-}
+/* .contacts-item-link {
+  
+} */
 
 .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -161,13 +161,16 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-font-color);
+  padding: 32px 0;
+  display: flex;  
+  align-items: center;
 }
 .svg-icon-envelope {
   margin-right: 10px;
   fill: currentColor;
 }
 .svg-icon-phone {
-  margin-left: 10px;
+  margin-right: 10px;
   fill: currentColor;
 }
 
@@ -231,9 +234,9 @@ button {
   width: 270px;
 }
 
-.qualities-list li + li {
-  margin-left: 30px;
-}
+  .qualities-list li + li {
+    margin-left: 30px;
+  }
 
 .qualities-list-title {
   margin-top: 30px;
@@ -473,7 +476,13 @@ button {
   letter-spacing: 0.03em;
   background-color: var(--section-team-bg-color);
 }
-
+/* тень кноток */
+.filter-btn:hover, 
+.filter-btn:focus 
+ {
+  /* эфект тени */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 /* Галерея Портфолио */
 
 .gallery-list {
@@ -490,8 +499,10 @@ button {
 .gallery-img {
   display: block;
 }
-
-.gallery-item:hover {
+/* ------.gallery-link:focus ----------*/
+.gallery-item:hover,
+.gallery-item:hover 
+ {
   /* эфект тени */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -521,9 +532,11 @@ button {
   line-height: 1.88;
   color: var(--main-font-color);
 }
-.gallery-link {
+/* .gallery-link {
   display: block;
-}
+} */
+
+
 /* -------------lesson-4--------------- */
 .background-svg-icon {
   display: flex;
@@ -558,10 +571,14 @@ button {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+ /* испаравления лесон 4 */
+  color: var(--border-br-color2);
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
+  /* испаравления лесон 4 */
+  color: var(--main-ligth-color);
 }
 .team-soc-link:hover .team-soc-icon,
 .team-soc-link:focus .team-soc-icon {
@@ -569,7 +586,9 @@ button {
   /* цвет svg при hover focus соц-сетей*/
 }
 .team-soc-icon {
-  fill: #afb1b8;
+   /* испаравления лесон 4 */
+fill: currentColor;
+  /* fill: #afb1b8; */
   /* цвет svg соц-сетей*/
 }
 /* Постояннын клиеты */
@@ -599,6 +618,7 @@ button {
   border-color: var(--border-br-color2);
   border-style: solid;
   border-radius: 4px;
+  color: var(--border-br-color2);
 }
 
 /* .contacts-item {
@@ -613,6 +633,7 @@ button {
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .clients-item {
@@ -624,5 +645,6 @@ button {
 }
 
 .clients-icon {
-  fill: #afb1b8;
+
+  fill: currentColor;
 }
